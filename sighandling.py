@@ -8,7 +8,7 @@ from numpy import int64
 import mne
 
 # Auxiliar method to load data from the 
-def get_dataset2a(subject):
+def get_dataset_bbcic4_2b(subject):
     # Load data from .mat file
     dataset = loadmat(subject)
     # Get classes with shape (n_trials, n_channels, n_samples)
