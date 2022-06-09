@@ -45,7 +45,7 @@ def get_dataset_bbcic4_2b(subject):
 
 def get_dataset_bbcic3_4a(subject):
     # Load data from .mat file
-    dataset = scipy.io.loadmat('D:\Dev\BCIProject\data\BCI_CIII_4a\data_set_IVa_aa.mat')
+    dataset = scipy.io.loadmat(subject)
     # DATA
     cnt = dataset['cnt'].transpose()
     stim = np.empty((1, cnt.shape[1]))
